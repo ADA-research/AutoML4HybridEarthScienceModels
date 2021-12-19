@@ -1,0 +1,6 @@
+README.md
+setup.py
+master_thesis.egg-info/PKG-INFO
+master_thesis.egg-info/SOURCES.txt
+master_thesis.egg-info/dependency_links.txt
+master_thesis.egg-info/top_level.txt

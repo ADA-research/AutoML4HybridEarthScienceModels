@@ -1,0 +1,63 @@
+experiment:
+    name: agb_1000
+    metrics: 
+      - mean_absolute_error
+      - mean_squared_error
+      - r2_score
+      - mean_absolute_percentage_error
+
+    logging:
+        path: src/data_science/results/
+        filename: agb_1000
+
+    data:
+        path: data/processed/AGB
+        in_situ_dataset: NFI_Sweden/in_situ_inc_SAR.csv
+        simulation_dataset: PROSAIL_LUT_S2_100000_evergreenForest.csv
+        simulation_samples: 100000
+        simulation_config: generic
+        simulation_target_col: 
+            - lai 
+            - cw
+            - cm
+        in_situ_target_col: AGB_sum
+        feature_cols:
+            - B1
+            - B2
+            - B3
+            - B4
+            - B5
+            - B6
+            - B7
+
+        extra_feature_cols:
+            - VV
+            - VH
+            - angle
+
+
+        url: https://raw.githubusercontent.com/victorneuteboom/master-thesis-public-data/master/data/AGB/AGB.zip
+
+    split:
+        train_samples: 1000
+
+    random:
+        seed: 1
+
+plotting:
+    figsize_x: 7
+    figsize_y: 7
+    title_fontsize: 20
+    label_fontsize: 14
+    tick_fontsize: 14
+    legend_fontsize: 14
+    cmap: "coolwarm"
+    save_fig: True
+
+models:
+    auto_sklearn: 
+        output: models/autosklearn
+        n_jobs: 1
+        time_per_task: 1080 #18 minutes 
+        total_time: 10800 # 3 hours
+        memory_limit: 6144 #6 GB

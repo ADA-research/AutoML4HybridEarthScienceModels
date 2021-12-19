@@ -1,0 +1,24 @@
+filepaths:
+    raw: "../data/raw/"
+    intermediate: "../data/intermediate/"
+    processed: "../data/processed/"
+
+gbov_data:
+    # Folder in which all GBOV RM07 csv files are located
+    gbov_folder: "GBOV_RM07"  
+    # Shapefile describing location of each GBOV plotID
+    shapefile: "shapefiles/NEON_TOS_Plot_Centroids.shp"
+    # (deprecated)
+    tiles: 'shapefiles/S2A_grid.kml'
+
+sentinel_data:
+    # If pixel has higher cloud probability (0-100), disregard it
+    max_cloud_prb: 70
+    # Maximum amount of days around in situ sampling date that we consider for satellite data
+    max_date_diff: 14 
+    input_filename: "GBOV_RM07.csv"
+    output_filename: "GBOV_LAI_toa_reflectances.csv"
+
+atmospheric_correction:
+    path: "../data/intermediate/" 
+    output_filename: "GBOV_LAI_toa_reflectances.csv"

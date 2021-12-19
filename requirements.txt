@@ -1,0 +1,9 @@
+numpy==1.20.2
+pandas==1.2.4
+scikit-learn==0.24.2
+tqdm==4.60.0
+modAL
+ConfigSpace==0.4.18
+auto-sklearn==0.13.0
+seaborn==0.11.1
+pyaml

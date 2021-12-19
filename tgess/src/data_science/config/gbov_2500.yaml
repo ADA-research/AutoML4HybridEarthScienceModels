@@ -1,0 +1,62 @@
+experiment:
+    name: gbov_2500
+    metrics: 
+      - mean_absolute_error
+      - mean_squared_error
+      - r2_score
+      - mean_absolute_percentage_error
+
+    logging:
+        path: src/data_science/results/
+        filename: gbov_2500
+
+    data:
+        path: data/processed/GBOV
+        in_situ_dataset: GBOV_RM07_in_situ.csv
+        simulation_dataset: PROSAIL_LUT_S2_100000_generic.csv
+        simulation_samples: 100000
+        simulation_config: generic
+        in_situ_target_col: LAI_Warren
+        simulation_target_col: LAI_Warren
+        feature_cols:
+            - 'B1'
+            - 'B2' 
+            - 'B3' 
+            - 'B4' 
+            - 'B5' 
+            - 'B6'
+            - 'B7'
+            - 'B8'
+            - 'B8A' 
+            - 'B9'
+            - 'B11'
+            - 'B12'
+            - 'solar_zenith'
+            - 'observer_zenith'
+            - 'relative_azimuth'
+
+        url: https://raw.githubusercontent.com/victorneuteboom/master-thesis-public-data/master/data/GBOV/GBOV.zip
+
+    split:
+        train_samples: 2500
+
+    random:
+        seed: 1
+
+plotting:
+    figsize_x: 7
+    figsize_y: 7
+    title_fontsize: 20
+    label_fontsize: 14
+    tick_fontsize: 14
+    legend_fontsize: 14
+    cmap: "coolwarm"
+    save_fig: True
+
+models:
+    auto_sklearn: 
+        output: models/autosklearn
+        n_jobs: 1
+        time_per_task: 1080 #18 minutes 
+        total_time: 10800 # 3 hours
+        memory_limit: 6144 #6 GB

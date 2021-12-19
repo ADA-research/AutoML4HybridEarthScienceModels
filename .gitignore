@@ -1,0 +1,20 @@
+tgess/other/
+
+# ignore files in folder data
+tgess/data/*
+tgess/data/raw/*
+tgess/data/intermediate/*
+tgess/data/processed/*
+tgess/src/data_science/results/*
+
+# ignore all of types .csv, .zip, .pyc and smac output
+*.csv
+*.pyc
+*.zip
+*.ipynb_checkpoints
+*smac3-output*
+
+# but keep the folder
+!tgess/data/raw/.gitkeep
+!tgess/data/intermediate/.gitkeep
+!tgess/data/processed/.gitkeep
