@@ -1,4 +1,5 @@
 # AutoML for creating hybrid Earth science models
+
 ## Abstract
 <p>
 Due to the availability of large sets of satellite data, an increasing number of Earth system science problems are tackled by applying machine learning.
@@ -17,6 +18,17 @@ In this thesis, we introduce a theory-guided framework that incorporates both si
 preprocessed, ready-to-use in situ, simulation and remote sensing data for each task. 
 From our experiments with this benchmark dataset, we conclude that for one task (leaf area index estimation), the theory-guided framework outperforms all baselines. In this task, the proposed method improves on vanilla Auto-sklearn by an increase in R<sup>2</sup> of 0.01 to 0.02 for training sizes of up to 250 in situ samples. For other tasks, vanilla Auto-sklearn consistently ranks as the best model.
 </p>
+
+## Citation
+When using code or data from this repository, please cite our work using the BibTeX entry below.
+```
+@misc{NeuteboomEtAl21,
+    author = "Neuteboom, Victor and Baratchi, Mitra and van Bodegom, Peter and de Sa, Nuno and Marszalek, Michael",
+    year = "2021",
+    title = "AutoML for creating hybrid Earth science models",
+    howpublished = "\url{https://theses.liacs.nl/pdf/2021-2022-NeuteboomV.pdf}",
+}
+``` 
 
 ## Data
 <p>
