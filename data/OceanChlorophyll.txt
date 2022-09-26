@@ -1,0 +1,9 @@
+Data is made acessible in: https://doi.pangaea.de/10.1594/PANGAEA.862886
+
+A. Valente, et al. (2016): A compilation of global bio-optical in situ data for ocean-colour satellite applications. Earth System Science
+Data, 8(1), 235-252, https://doi.org/10.5194/essd-8-235-2016. doi:10.1594/PANGAEA.862886. URL https://doi.org/10.1594/PANGAEA.862886
+
+
+
+This publication is part of the project “Physics-aware Spatio-temporal Machine Learning for Earth Observation Data” (with project number OCENW.KLEIN.425) of the research programme
+Open Competition ENW which is partly financed by the Dutch Research Council (NWO)
