@@ -10,7 +10,6 @@ tgess/src/data_science/results/*
 # ignore all of types .csv, .zip, .pyc and smac output
 *.csv
 *.pyc
-*.zip
 *.ipynb_checkpoints
 *smac3-output*
 
